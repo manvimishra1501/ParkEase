@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkEase - Smart Parking Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body> 
+    
+    <header>
+        <div class="logo">ParkEase</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>REVOLUTIONARY PARKING APP</h1>
+            <p>Your Parking SPOT, Just A TAP Away.</p>
+        </div>
+    </section>
+    <section id="findParking">
+        <h2>Find Nearby Parking</h2>
+        <button id="getLocationBtn">Find Parking Near Me</button>
+        <p id="parkingResult"></p>
+        <a id="openMapsBtn" href="#" target="_blank" class="btn" style="display: none;">Open in Google Maps</a>
+    </section>
+    
+    
+    <section id="features" class="section">
+        <h2 class="section-title">Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-item">🔍 <h3>Real-time Parking Spot Availability</h3><p>View available parking spots instantly.</p></div>
+            <div class="feature-item">🚗 <h3>Smart Parking Reservations</h3><p>Reserve your parking spot in advance.</p></div>
+            <div class="feature-item">💳 <h3>Secure Online Payments</h3><p>Pay seamlessly through the app.</p></div>
+            <div class="feature-item">📍 <h3>AI-Powered Parking Suggestions</h3><p>Get the best parking options based on your location.</p></div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <h2 class="section-title">Pricing Plans</h2>
+        <div class="pricing-grid">
+            <div class="plan">
+                <h3>PARK FOR AN INSTANCE</h3>
+                <p>INSTANT PAYMENT FOR PARKING.</p>
+                <p><strong>15/- INR</strong></p>
+            </div>
+            <div class="plan">
+                <h3>PARKING SUBSCRIPTIONS</h3>
+                <p>Includes reservations and payment features for monthly parking.</p>
+                <p><strong>250/- INR/month</strong></p>
+            </div>
+            <div class="plan">
+                <h3>ENTERPRISE</h3>
+                <p>Customized solutions for businesses and cities.</p>
+                <p><strong>Contact us</strong></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="section">
+        <h2 class="section-title">What Our Users Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"ParkEase saved me so much time finding parking in the city! Highly recommended."</p>
+                <strong>- Manvi Mishra</strong>
+            </div>
+            <div class="testimonial">
+                <p>"The AI-powered suggestions are incredibly accurate. I never struggle with parking anymore."</p>
+                <strong>- Kritika Paliwal</strong>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Have questions? Reach out to us.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <div>
+            <label for="parkingSpot">Select a Parking Spot</label>
+            <select id="parkingSpot">
+                <option value="1">Spot 1</option>
+                <option value="2">Spot 2</option>
+                <option value="3">Spot 3</option>
+            </select>
+        </div>
+        <div>
+            <label for="reservationDate">Date and Time</label>
+            <input type="datetime-local" id="reservationDate">
+        </div>
+        <button id="reserveSpotBtn">Reserve Spot</button>
+    </section>
+    
+    <section id="paymentSection" style="display: none;">
+        <h2>Proceed with Payment</h2>
+        <p>Scan to Pay via UPI</p>
+        <img src="upi_qr_code.jpg" alt="UPI QR Code" width="250">
+        <p>OR Pay using UPI ID: <strong>simran4@oksbi</strong></p>
+        
+        <a href="upi://pay?pa=simran4@oksbi&pn=ParkEase&mc=0000&tid=123456&tr=987654321&tn=Parking Payment&am=15&cu=INR" 
+           class="btn" id="payNowBtn">
+            Pay Now via UPI
+        </a>
+    </section>    
+    <footer>
+        <p>&copy; 2025 ParkEase. All rights reserved.</p>
+    </footer>
+</body>
+</html>
